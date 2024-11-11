@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)),
+    url("weather.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 92vh;
+    text-align: center;
+}
+
+
+.weather{
+    background-color: rgb(255, 255, 255,0.2);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    border:2px solid black;
+    margin-top: 10%;
+}
+.search-form{
+    display: flex;
+    align-items: center;
+}
+input[type="text"]{
+    flex: 1;
+    padding: 20px;
+    border: 3px solid black(101, 185, 218);
+    border-radius: 15px;
+    font-size: 1rem;
+    height: 3.5rem;
+}
+.search-btn{
+    background-color: skyblue;
+    /* border: none; */
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+    /* border: 2ps solid skyblue; */
+}
+.city-date-section{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.temrature-info{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.temrature-info .description{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+.additional-info{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.wind-info,
+.humidity-info,
+.visibility-info{
+    background-color: rgba(236, 240, 241, 0.5);
+    width: 150px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: rgba(0,0,0,0.2) 0px 3px 8px;
+    border: 2px solid black;
+}
